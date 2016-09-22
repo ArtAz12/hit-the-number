@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Welcome to the Random Game !");
+            Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("In this game , you have to hit the number to 1 to 10 who the computer's going to say.");
+            Console.ReadLine();
+            int[] b =new int[] { Convert.ToInt32(Console.ReadLine()) };
+            int[] a = new int []{1 , 2 ,3 , 4 , 5,6 ,7,8 ,9 , 10 };
+            
+            if (a == b)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Congratulations! You won the game!");
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("You lose the game ...");
+                Console.ReadLine();
+
+            }
+        }
+    }
+}
